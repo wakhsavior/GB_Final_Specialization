@@ -1,0 +1,1000 @@
+  626  ls secret_folder/
+  627  sudo setfacl -m g:developer:+rwx secret_folder/
+  628  su developer1
+  629  sudo chmod g-r secret_folder/
+  630  ls -la
+  631  sudo ls -al secret_folder/
+  632  sudo cd secret_folder/
+  633  sudo chmod g+r secret_folder/*
+  634  sudo chmod g+r secret_folder/file1
+  635  sudo chmod g+r secret_folder/file2
+  636  sudo chmod g+rw secret_folder/file2
+  637  sudo chmod g+rw secret_folder/file1
+  638  sudo chmod g+rw secret_folder/file2_new
+  639  sudo chmod g+rw secret_folder/file4_new
+  640  sudo chmod g+rw secret_folder/file3
+  641  sudo ls -la secret_folder/
+  642  su developer1
+  643  ls
+  644  ls -la
+  645  ls -la secret_folder/
+  646  sudo ls -la secret_folder/
+  647  sudo ls -la 
+  648  sudo chmod g+rw secret_folder/*
+  649  sudo chmod g+r secret_folder/
+  650  sudo chmod g+r secret_folder/*
+  651  sudo ls -la 
+  652  ls secret_folder/
+  653  sudo ls secret_folder/
+  654  su developer1
+  655  history 
+  656  mkdir shared
+  657  sudo mkdir shared
+  658  ls -la
+  659  chmod +t shared/
+  660  sudo chmod +t shared/
+  661  ls -la
+  662  history
+  663  cd ..
+  664  sudo mkdir secret_folder
+  665  vim secret_folder/
+  666  cd secret_folder/
+  667  sudo cp /home/wakhsavior/test/file* /opt/secret_folder/
+  668  ls -la
+  669  chown root:developer file*
+  670  sudo chown root:developer file*
+  671  cd ..
+  672  ls -la
+  673  chown root:developer secret_folder/
+  674  sudo chown root:developer secret_folder/
+  675  sudo chmod g+s secret_folder/
+  676  sudo chmod g-rx secret_folder/
+  677  sudo chmod o-rx secret_folder/
+  678  ls -la
+  679  history 
+  680  su developer1
+  681  sudo chmod g+ws ../develop_folder/
+  682  cd ..
+  683  ls -la
+  684  chown -R root.developer develop_folder/
+  685  sudo chown -R root.developer develop_folder/
+  686  ls -ls
+  687  ls -la
+  688  cd develop_folder/
+  689  ls -la
+  690  su developer3
+  691  sudo chgrp -R developer /opt/develop_folder/
+  692  ls -la
+  693  cd develop_folder/
+  694  ls -la
+  695  su developer2
+  696  ls
+  697  cd test/
+  698  ls
+  699  cd test_dir2/
+  700  ls
+  701  cd //
+  702  cd /home/wakhsavior/
+  703  ls
+  704  ls -la
+  705  mv develop_folder/ /opt/
+  706  sudo mv develop_folder/ /opt/
+  707  ls -la /
+  708  su developer1
+  709  sudo visudo -f /etc/sudoers.d/test 
+  710  addgroup developer
+  711  sudo addgroup developer
+  712  adduser developer1
+  713  sudo adduser developer1
+  714  sudo adduser developer2
+  715  sudo adduser developer3
+  716  history 
+  717  usermod -aG developer developer1
+  718  sudo usermod -aG developer developer1
+  719  sudo usermod -aG developer developer2
+  720  sudo usermod -aG developer developer3
+  721  history 
+  722  mkdir develop_folder
+  723  ls -la
+  724  cat /etc/group
+  725  cat /etc/passwd
+  726  ls -la
+  727  chown root:developer develop_folder/
+  728  sudo chown root:developer develop_folder/
+  729  ls -la
+  730  history 
+  731  ls -la
+  732  su developer1
+  733  sudo visudo -f /etc/sudoers.d/test 
+  734  sudo usermod -aG testgroup test
+  735  su test
+  736  sudo usermod -G test test
+  737  cat /etc/group
+  738  su test
+  739  sudo visudo -f /etc/sudoers.d/test 
+  740  su test
+  741  sudo visudo -f /etc/sudoers.d/test 
+  742  su test
+  743  tmux
+  744  sudo apt install tmux
+  745  ls
+  746  cd test/
+  747  cd Seminar_04/
+  748  ls
+  749  chmod u+x,g+x ownersort.sh 
+  750  tmux attach
+  751  tmux 
+  752  ip addr
+  753  service --status-all
+  754  service 
+  755  type services
+  756  type service
+  757  ls
+  758  cd test/
+  759  ls
+  760  cat script.sh 
+  761  cat *.sh
+  762  ls *.sh
+  763  cat loops.sh 
+  764  cat variable.sh 
+  765  ./variable.sh 
+  766  ls *.sh
+  767  cat script.sh 
+  768  cat testscript_2.sh 
+  769  ls
+  770  cd Seminar_04/
+  771  ls 
+  772  cd test_dir3/
+  773  ls
+  774  cp file* file*.bak
+  775  ls
+  776  cp file1 files1.bak
+  777  cp file2 files2.bak
+  778  cp file2_new files2_new.bak
+  779  cp file3 files3.bak
+  780  cp file1 files1.tmp
+  781  cp file3 files3.tmp
+  782  cp file3 files3.backup
+  783  cp file2 files2.backup
+  784  cp file1 files1.backup
+  785  ls
+  786  cd ..
+  787  cp -R test_dir3/ test
+  788  ls
+  789  ls test
+  790  cd ..
+  791  ls
+  792  cat loops.sh 
+  793  cat script.sh 
+  794  ip ad
+  795  exit
+  796  sudo apt update
+  797  sudo apt search nginx
+  798  sudo apt list nginx
+  799  apt install nginx
+  800  sudo apt install nginx
+  801  cd /etc/nginx/
+  802  ls
+  803  apt remove nginx
+  804  sudo apt remove nginx
+  805  ls
+  806  cd/
+  807  cd /
+  808  apt autoremove
+  809  sudo apt autoremove
+  810  apt install nginx
+  811  sudo apt install nginx
+  812  sudo apt purge nginx
+  813  sudo apt purge libnginx-mod-http-geoip2 libnginx-mod-http-image-filter libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream libnginx-mod-stream-geoip2 nginx-common nginx-core
+  814  ls /etc/nginx
+  815  apt list mc
+  816  apt show mc
+  817  pwd
+  818  cd ~
+  819  wget https://download.virtualbox.org/virtualbox/7.0.8/virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb
+  820  ls
+  821  dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb 
+  822  sudo dpkg -i virtualbox-7.0_7.0.8-156879~Ubuntu~jammy_amd64.deb 
+  823  apt -f install
+  824  sudo apt -f install
+  825  cd /etc/apt/
+  826  ls
+  827  cd sources.list.d/
+  828  ls
+  829  cat > vb.list
+  830  sudo cat > vb.list
+  831  sudo vim vb.list
+  832  apt update
+  833  sudo apt update
+  834  sudo wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
+  835  sudo apt update
+  836  cat /var/spool/cron/
+  837  ls /var/spool/cron/
+  838  ls /var/spool/cron/crontabs/
+  839  sudo ls /var/spool/cron/crontabs/
+  840  cd /etc/
+  841  vim  crontab 
+  842  cd cron.daily/
+  843  ls
+  844  ls -la
+  845  ll
+  846  cd ../cron.d
+  847  ls
+  848  ll
+  849  vim  e2scrub_all 
+  850  ps afx | grep [c]ron
+  851  crontab -l
+  852  crontab -e
+  853  crontab -l
+  854  crontab -r
+  855  crontab -l
+  856  cd /home/wakhsavior/test/
+  857  ls
+  858  mkdir Seminar_04
+  859  mkdir Seminar_05
+  860  cd Seminar_0
+  861  cd Seminar_05
+  862  apt list
+  863  apt list --installed
+  864  cat /etc/apt/sources.list
+  865  sudo vim /etc/apt/sources.list.d/freeradius.list
+  866  sudo vim /etc/apt/sources.list
+  867  wget http://security.ubuntu.com/ubuntu/pool/main/f/freeradius/freeradius_3.0.26~dfsg~git20220223.1.00ed0241fa-0ubuntu3.1_amd64.deb
+  868  sudo dpkg -i freeradius_3.0.26~dfsg~git20220223.1.00ed0241fa-0ubuntu3.1_amd64.deb 
+  869  apt -f
+  870  apt -f install
+  871  sudo apt -f install
+  872  sudo dpkg -i freeradius_3.0.26~dfsg~git20220223.1.00ed0241fa-0ubuntu3.1_amd64.deb 
+  873  dpkg -r freeradius
+  874  sudo dpkg -r freeradius
+  875  apt update
+  876  sudo apt update
+  877  sudo apt upgrade
+  878  apt list --installed
+  879  apt --autoremove
+  880  sudo apt --autoremove
+  881  sudo apt autoremove
+  882  crontab -e
+  883  date
+  884  sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
+  885  ls /usr/local/bin/
+  886  sudo ls /usr/local/bin/
+  887  sudo apt install ca-certificates curl gnupg
+  888  sudo install -m 0755 -d /etc/apt/keyrings
+  889  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+  890  sudo chmod a+r /etc/apt/keyrings/docker.gpg
+  891  echo   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  892    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  893  ls /etc/apt/sources.list.d/
+  894  cat /etc/apt/sources.list.d/docker.list 
+  895  sudo apt update
+  896  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+  897  sudo docker run hello-world
+  898  sudo apt show docker
+  899  sudo systemctl status docker
+  900  sudo apt install snapd
+  901  sudo add-apt-repository ppa:deluge-team/ppa && sudo apt-get update
+  902  sudo remove-apt-repository ppa:deluge-team/ppa && sudo apt-get update
+  903  sudo add-apt-repository ppa:dr-akulavich/lighttable
+  904  sudo apt search lighttable-installer
+  905  sudo apt search lighttable
+  906  sudo apt remove lighttable
+  907  sudo apt remove lighttable-installer
+  908  sudo apt install lighttable-installer
+  909  sudo apt remove lighttable-installer
+  910  sudo add-apt-repository --remove ppa:dr-akulavich/lighttable
+  911  sudo add-apt-repository --remove ppa:deluge-team/ppa
+  912  sudo  systemctl status snapd
+  913  snap find vlc
+  914  sudo snap install vlc
+  915  sudo snap remove vlc
+  916  crontab -l
+  917  ls
+  918  ls /home/wakhsavior/
+  919  crontab -e
+  920  man date 
+  921  date %H
+  922  date -%H
+  923  man date 
+  924  date --date=%H
+  925  date --date='%H'
+  926  date 
+  927  date +%H
+  928  date +%H+%M
+  929  date +%H %M
+  930  date '+%H %M'
+  931  date '+%H_%M'
+  932  crontab -e
+  933  crontab -l
+  934  cd /home/wakhsavior/
+  935  ls
+  936  cat 123.txt 
+  937  rm 123.txt 
+  938  ls
+  939  watch -n 0.5 ls
+  940  data=`date '+%H_%M'`; mkdir $data ; cat >> $data/123.txt
+  941  data=`date '+%H_%M'`; mkdir $data ; touch >> $data/123.txt
+  942  data=`date '+%H_%M'`; mkdir $data ; touch >> 123.txt  $data
+  943  ls
+  944  rm 23_5*
+  945  rm -R 23_5*
+  946  rm 123.txt 
+  947  data=`date '+%H_%M'`; mkdir $data ; touch >> 123.txt  $data
+  948  ls
+  949  touch >> $data/123.txt 
+  950  touch >> $data/123.txt asdas
+  951  ls
+  952  touch >>  $data $data/123.txt
+  953  touch >>  date $data/123.txt
+  954  ls
+  955  cat date 
+  956  rm 123.txt 
+  957  rm -R 23_57/
+  958  rm asdas 
+  959  rm date 
+  960  ls
+  961  touch $data/123.txt
+  962  crontab -e
+  963  ls
+  964  man date 
+  965  date +%F
+  966  data = `date +%F`
+  967  data=`date +%F`
+  968  tar -cvf tmp_$data.tar /home/wakhsavior/
+  969  ls 
+  970  data=`date +%F`
+  971  crontab -e
+  972  crontab -l
+  973  exit
+  974  vim delfiles.sh 
+  975  vim ownersort.sh 
+  976  ls -f
+  977  ls -h
+  978  ls 
+  979  ls --help
+  980  man ls
+  981  vim ownersort.sh 
+  982  ./ownersort.sh 
+  983  ./ownersort.sh test
+  984  vim ownersort.sh 
+  985  ./ownersort.sh test
+  986  ls test
+  987  ls -FGl test
+  988  ls -FGl test 
+  989  vim ownersort.sh 
+  990  ls -FlG test 
+  991  vim ownersort.sh 
+  992  ls -FlG test 
+  993  vim ownersort.sh 
+  994  ./ownersort.sh test
+  995  vim ownersort.sh 
+  996  ./ownersort.sh test
+  997  vim ownersort.sh 
+  998  ./ownersort.sh test
+  999  ls
+ 1000  ls -FlG test
+ 1001  vim ownersort.sh 
+ 1002  ./ownersort.sh test
+ 1003  vim ownersort.sh 
+ 1004  ls
+ 1005  ls -F
+ 1006  ls -F | grep /$
+ 1007  ls -F | grep /$ -v
+ 1008  vim ownersort.sh 
+ 1009  ./ownersort.sh test
+ 1010  vim ownersort.sh 
+ 1011  ./ownersort.sh test
+ 1012  vim ownersort.sh 
+ 1013  ./ownersort.sh test
+ 1014  vim ownersort.sh 
+ 1015  ./ownersort.sh test
+ 1016  vim ownersort.sh 
+ 1017  ./ownersort.sh test
+ 1018  vim ownersort.sh 
+ 1019  ls -1
+ 1020  fs=(*)
+ 1021  for i in ${fs[@]};do echo i;done
+ 1022  for i in ${fs[@]};do echo $i;done
+ 1023  vim ownersort.sh 
+ 1024  ./ownersort.sh test
+ 1025  vim ownersort.sh 
+ 1026  ./ownersort.sh test
+ 1027  vim ownersort.sh 
+ 1028  ./ownersort.sh test
+ 1029  vim ownersort.sh 
+ 1030  ./ownersort.sh test
+ 1031  vim ownersort.sh 
+ 1032  ./ownersort.sh test
+ 1033  vim ownersort.sh 
+ 1034  ./ownersort.sh test
+ 1035  ls test
+ 1036  ./ownersort.sh test
+ 1037  ls
+ 1038  ls test_dir3/
+ 1039  ls test
+ 1040  ./ownersort.sh test
+ 1041  vim ownersort.sh 
+ 1042  ./ownersort.sh test
+ 1043  vim ownersort.sh 
+ 1044  ./ownersort.sh test
+ 1045  man test
+ 1046  vim ownersort.sh 
+ 1047  ./ownersort.sh test
+ 1048  vim ownersort.sh 
+ 1049  ls -lG test/file1
+ 1050  ls -lG test/file1 | awk '{print $3}'
+ 1051  vim ownersort.sh 
+ 1052  ./ownersort.sh test
+ 1053  vim ownersort.sh 
+ 1054  ./ownersort.sh test
+ 1055  vim ownersort.sh 
+ 1056  ./ownersort.sh test
+ 1057  vim ownersort.sh 
+ 1058  ./ownersort.sh test
+ 1059  vim ownersort.sh 
+ 1060  ./ownersort.sh test
+ 1061  ls test
+ 1062  rm test/wakhsavior/
+ 1063  rm -R test/wakhsavior/
+ 1064  vim ownersort.sh 
+ 1065  ./ownersort.sh test
+ 1066  vim ownersort.sh 
+ 1067  ./ownersort.sh test
+ 1068  vim ownersort.sh 
+ 1069  ./ownersort.sh test
+ 1070  vim ownersort.sh 
+ 1071  cp -Rf test_dir3/ test/
+ 1072  ls test
+ 1073  rm -R test/test_dir3/
+ 1074  ls
+ 1075  cp -Rf test_dir3/* test/
+ 1076  ls test
+ 1077  cd test
+ 1078  ls wakhsavior/
+ 1079  rm -R wakhsavior/
+ 1080  ls -la
+ 1081  chown developer1:developer1 file1
+ 1082  sudo chown developer1:developer1 file1
+ 1083  ls -la
+ 1084  sudo cp file1 file10
+ 1085  ls -la
+ 1086  sudo chown developer1:developer1 file10
+ 1087  sudo chown developer2:developer2 file2
+ 1088  sudo chown developer3:developer3 file3*
+ 1089  sudo chown developer2:developer2 file2*
+ 1090  ls -la
+ 1091  sudo chown developer2:developer2 files2*
+ 1092  sudo chown developer3:developer3 files3*
+ 1093  ls -la
+ 1094  cd ..
+ 1095  cp -R test test_dir4
+ 1096  ls test_dir4/
+ 1097  ls -la test_dir4/
+ 1098  ls -la test_dir4/test/
+ 1099  ls -la test
+ 1100  sudo cp -R test/* test_dir4
+ 1101  ls -la test_dir4/
+ 1102  rm -R test_dir4
+ 1103  sudo cp -R test/* test_dir4
+ 1104  mkdir test_dir4
+ 1105  sudo cp -R test/* test_dir4
+ 1106  ls -la test_dir4/
+ 1107  rm test_dir4/*
+ 1108  cp -a test/* test_dir4
+ 1109  ls -la test_dir4/
+ 1110  rm test_dir4/*
+ 1111  cp -pr test/* test_dir4
+ 1112  ls -la test_dir4/
+ 1113  rm test_dir4/*
+ 1114  ls -la test_dir4/
+ 1115  cp -pr test/* test_dir4/
+ 1116  ls -la test_dir4/
+ 1117  rsync -a test/file1 test_dir4/file1
+ 1118  ls -la test_dir4/
+ 1119  sudo rsync -a test/file1 test_dir4/file1
+ 1120  ls -la test_dir4/
+ 1121  rm test_dir4/*
+ 1122  rm -f test_dir4/*
+ 1123  sudo cp -pr test/* test_dir4/
+ 1124  ls -la test_dir4/
+ 1125  vim ownersort.sh 
+ 1126  ./ownersort.sh 
+ 1127  ./ownersort.sh test
+ 1128  sudo ./ownersort.sh test
+ 1129  ls -la test/
+ 1130  ls -la test/developer1
+ 1131  ls -la test/developer2
+ 1132  ls -la test/developer3
+ 1133  ls -la test/wakhsavior/
+ 1134  rm -R test/developer1
+ 1135  rm -Rf test/developer*
+ 1136  sudo rm -Rf test/developer*
+ 1137  sudo rm -Rf test/wakhsavior/
+ 1138  ls test
+ 1139  vim ownersort.sh 
+ 1140  sudo ./ownersort.sh test
+ 1141  ls -la test
+ 1142  ls
+ 1143  cat delfiles.sh 
+ 1144  cat ownersort.sh 
+ 1145  ls -lG
+ 1146  ls -F -1
+ 1147  ls -F -1 | grep /$
+ 1148  ls -F -1 | grep /$ -v
+ 1149  ls -F| grep /$ -v
+ 1150  ls -F | grep /$ -v
+ 1151  ls
+ 1152  ls -F
+ 1153  ls -Fl | grep /$ -v
+ 1154  ls -FlG | grep /$ -v
+ 1155  ls -FlG | grep /$ -v | awk '{print $3}'
+ 1156  ls
+ 1157  ip addr -s c
+ 1158  ip addr -s -c
+ 1159  ip -s -c a 
+ 1160  ip -c a 
+ 1161  ip -s a 
+ 1162  ip r
+ 1163  ip link 
+ 1164  ss -ntlp
+ 1165  sudo ss -nltp
+ 1166  sudo ss -nltup
+ 1167  sudo ss -tulpan
+ 1168  cat /etc/netplan/01-network-manager-all.yaml 
+ 1169  dig ya.ru
+ 1170  mtr ya.ru
+ 1171  host -t a ya.ru
+ 1172  tracepath ya.ru
+ 1173  host -t a ya.ru 8.8.8.8
+ 1174  host -t mx ya.ru 8.8.8.8
+ 1175  cat /etc/hosts
+ 1176  resolvectl dns
+ 1177  sudo su
+ 1178  iptables -nvL
+ 1179  sudo su
+ 1180  exit
+ 1181  iptables-save > iptables.rules
+ 1182  sudo iptables-save > iptables.rules
+ 1183  ls
+ 1184  ls -la
+ 1185  cat iptables.rules 
+ 1186  sudo su
+ 1187  iptables -t nat -nvL
+ 1188  sudo iptables -t nat -nvL
+ 1189  iptables -S
+ 1190  sudo iptables -S
+ 1191  sudo iptables -S -t nat
+ 1192  sudo su
+ 1193  curl
+ 1194  sudo apt install curl
+ 1195  curl -L https://ya.ru
+ 1196  sudo apt install nginx
+ 1197  sudo  su
+ 1198  exit
+ 1199  sudo su
+ 1200  exit
+ 1201  sudo apt install docker.io
+ 1202  exit
+ 1203  sudo docker
+ 1204  sudo su
+ 1205  ls
+ 1206  mkdir wordpress && cd wordpress
+ 1207  mkdir nginx-conf
+ 1208  vim nginx-conf/nginx.conf
+ 1209  sudo apt 
+ 1210  sudo apt purge apache2
+ 1211  sudo apt purge nginx
+ 1212  ss -ntpl
+ 1213  sudo apt purge phpmyadmin
+ 1214  sudo apt purge mysql
+ 1215  sudo vim /etc/apt/sources.list.d/wget-log 
+ 1216  sudo rm /etc/apt/sources.list.d/wget-log 
+ 1217  vim nginx-conf/nginx.conf
+ 1218  docker ps
+ 1219  sudo docker ps
+ 1220  sudo docker-compose ps
+ 1221  cd ..
+ 1222  ls
+ 1223  cd docker/
+ 1224  ls
+ 1225  sudo docker-compose ps
+ 1226  sudo docker-compose stop
+ 1227  cd ../wordpress/
+ 1228  vim .env
+ 1229  git init 
+ 1230  apt install git
+ 1231  sudo apt install git
+ 1232  sudo apt autoremove
+ 1233  sudo apt install git
+ 1234  git init 
+ 1235  vim .gitignore
+ 1236  vim .dockerignote
+ 1237  vim  docker-compose.yaml
+ 1238  yamllint docker-compose.yaml 
+ 1239  vim  docker-compose.yaml
+ 1240  ls /var/lib/docker/
+ 1241  sudo ls /var/lib/docker/
+ 1242  sudo ls /var/lib/docker/volumes/
+ 1243  sudo su
+ 1244  vim docker-compose.yaml 
+ 1245  sudo su
+ 1246  ip a
+ 1247  sudo apt update && apt upgrade
+ 1248  sudo apt upgrade
+ 1249  sudo reboot
+ 1250  sudo apt search apache
+ 1251  sudo apt show apache 
+ 1252  sudo apt search apache --installed
+ 1253  sudo apt search apache --install
+ 1254  sudo apt search apache
+ 1255  man apt search 
+ 1256  sudo apt list apache
+ 1257  sudo apt list
+ 1258  sudo apt list | grep apache
+ 1259  sudo apt purge apache
+ 1260  sudo apt search apache 
+ 1261  apt list --installed
+ 1262  apt list --installed | grep apache
+ 1263  sudo apt search apache2
+ 1264  sudo apt purge apache2
+ 1265  sudo apt autoremove
+ 1266  sudo apt purge nginx
+ 1267  sudo apt lit --installed | grep nginx
+ 1268  sudo apt list --installed | grep nginx
+ 1269  sudo apt list --installed
+ 1270  sudo apt list --installed | grep nginx
+ 1271  sudo apt purge apache2
+ 1272  sudo apt list --installed apache2
+ 1273  sudo apt list --installed nginx
+ 1274  sudo apt list --installed bash
+ 1275  sudo ss -tulnp
+ 1276  sudo apt list --installed mysql
+ 1277  sudo apt list --installed | grep mysql
+ 1278  sudo apt list --installed mysql-server-8.0
+ 1279  sudo apt list --installed | grep nginx
+ 1280  sudo apt list --installed | grep apache
+ 1281  sudo apt purge apache2-bin
+ 1282  sudo apt list --installed | grep apache
+ 1283  sudo apt list --installed | grep mysql
+ 1284  sudo apt purge mysql-common
+ 1285  sudo apt list --installed | grep mysql
+ 1286  sudo apt autoremove
+ 1287  sudo apt list --installed | grep mysql
+ 1288  sudo ss -tulnp
+ 1289  sudo docker pull container-registry.oracle.com/mysql/community-server:latest
+ 1290  docker ps
+ 1291  sudo docker ps
+ 1292  ls
+ 1293  sudo  crontab 
+ 1294  sudo  crontab -e
+ 1295  ls
+ 1296  cd /etc/docker/
+ 1297  ls
+ 1298  cd ~
+ 1299  ls
+ 1300  cd docker/
+ 1301  ls
+ 1302  sudo docker ps
+ 1303  cat docker-compose.yaml 
+ 1304  docker-compose ps 
+ 1305  sudo docker-compose ps 
+ 1306  docker-compose ps 
+ 1307  sudo docker ps
+ 1308  sudo docker-compose stop
+ 1309  sudo docker ps
+ 1310  sudo docker-compose ps 
+ 1311  sudo docker-compose start
+ 1312  sudo docker rm wordpress
+ 1313  sudo docker stop wordpress
+ 1314  sudo docker rm wordpress
+ 1315  sudo docker stop db
+ 1316  sudo docker rm 
+ 1317  sudo docker ps
+ 1318  sudo docker stop phpmyadmin_db_1
+ 1319  sudo docker rm phpmyadmin_db_1
+ 1320  sudo docker stop phpmyadmin_phpmyadmin_1
+ 1321  sudo docker rm phpmyadmin_phpmyadmin_1
+ 1322  sudo docker images
+ 1323  sudo docker rmi mariadb
+ 1324  sudo docker rmi mariadb:10.6
+ 1325  sudo docker rmi wordpress:5.1.1-fpm-alpine
+ 1326  sudo docker images
+ 1327  sudo docker rmi nginx:1.15.12-alpine
+ 1328  sudo docker images
+ 1329  sudo docker rmi phpmyadmin
+ 1330  sudo docker rmi container-registry.oracle.com/mysql/community-server
+ 1331  sudo docker images
+ 1332  sudo docker rmi nginx
+ 1333  sudo docker-compose 
+ 1334  sudo docker-compose stop
+ 1335  sudo docker rmi nginx
+ 1336  sudo docker rmi nginx:1.15.12-alpine
+ 1337  sudo docker-compose ps
+ 1338  sudo docker-compose 
+ 1339  sudo docker-compose images
+ 1340  sudo docker-compose kill
+ 1341  sudo docker-compose rm
+ 1342  sudo docker ps
+ 1343  sudo docker images
+ 1344  sudo docker rm nginx
+ 1345  sudo docker rm nginx:1.15.12-alpine
+ 1346  sudo docker rmi nginx:1.15.12-alpine
+ 1347  sudo docker -f rmi nginx:1.15.12-alpine
+ 1348  sudo docker
+ 1349  sudo docker rmi nginx:1.15.12-alpine
+ 1350  sudo docker stop 46787d42d532
+ 1351  sudo docker rmi nginx:1.15.12-alpine
+ 1352  sudo docker rm 46787d42d532
+ 1353  sudo docker rmi nginx:1.15.12-alpine
+ 1354  docker pull container-registry.oracle.com/mysql/community-server
+ 1355  sudo poweroff
+ 1356  apt install mysql
+ 1357  sudo apt install mysql
+ 1358  sudo apt search mysql
+ 1359  sudo apt install mysql-server
+ 1360  ss -lutnp
+ 1361  sudo ss -lutnp
+ 1362  vim /etc/mysql/mysql.cnf 
+ 1363  vim /etc/mysql/conf.d/mysql.cnf 
+ 1364  vim /etc/mysql/mysql.conf.d/mysql.cnf 
+ 1365  vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+ 1366  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+ 1367  systemctl restart mysql
+ 1368  sudo ss -lutnp
+ 1369  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+ 1370  systemctl restart mysql
+ 1371  sudo ss -lutnp
+ 1372  sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf 
+ 1373  systemctl restart mysql
+ 1374  sudo ss -lutnp
+ 1375  mysql
+ 1376  sudo mysql
+ 1377  groupmod 
+ 1378  mysql -h 127.0.0.1 -u root -p  
+ 1379  sudo iptables -nvL
+ 1380  sudo iptables -I INPUT 6 -p tcp --dport 3306 -j ACCEPT
+ 1381  sudo iptables -nvL
+ 1382  mysql -h 127.0.0.1 -u root -p  
+ 1383  mysql -u wakh -h localhost -p  
+ 1384  sudo poweroff
+ 1385  ip ad
+ 1386  sudo iptables -nvL
+ 1387  sudo iptables -I INPUT 6 -p tcp --dport 3306 -j ACCEPT
+ 1388  sudo iptables -nvL
+ 1389  ss -tulnp
+ 1390  sudo apt install iptables-persistent 
+ 1391  sudo systemctl status iptables.service 
+ 1392  sudo systemctl start iptables.service 
+ 1393  sudo systemctl status iptables.service 
+ 1394  ss -tulnp
+ 1395  sudo iptables -nvL
+ 1396  sudo iptables -I INPUT 6 -p tcp --dport 3306 -j ACCEPT
+ 1397  sudo iptables -nvL
+ 1398  sudo reboot 
+ 1399  sudo iptables -nvL
+ 1400  sudo systemctl status iptables.service 
+ 1401  sudo systemctl start iptables.service 
+ 1402  sudo systemctl status iptables.service 
+ 1403  sudo iptables -nvL
+ 1404  netfilter-persistent save
+ 1405  sudo netfilter-persistent save
+ 1406  sudo iptables -nvL
+ 1407  sudo iptables -I INPUT 6 -p tcp --dport 3306 -j ACCEPT
+ 1408  sudo iptables -nvL
+ 1409  sudo netfilter-persistent save
+ 1410  sudo reboot 
+ 1411  sudo iptables -nvL
+ 1412  sudo poweroff 
+ 1413  ip a
+ 1414  sudo su
+ 1415  ls
+ 1416  cd test/
+ 1417  cat show_int_desc.txt
+ 1418  cat > show_int_desc.txt
+ 1419  cat show_int_desc.txt 
+ 1420  cat show_int_desc.txt | awk {print $1}
+ 1421  cat show_int_desc.txt | awk '{print $1}'
+ 1422  cat show_int_desc.txt | awk '{print $1 $3}'
+ 1423  cat show_int_desc.txt | awk '{print $1 $4}'
+ 1424  cat show_int_desc.txt | awk '{print $1;$4}'
+ 1425  cat show_int_desc.txt | awk '{print $1\;$4}'
+ 1426  cat show_int_desc.txt | awk '{print $1';'$4}'
+ 1427  cat show_int_desc.txt | awk '{print $1;$4}'
+ 1428  cat show_int_desc.txt | awk '{print $1 $4}'
+ 1429  cat show_int_desc.txt | awk '{print $1 $4 $5 $6}'
+ 1430  cat show_int_desc.txt | awk '{print $1 $4 $5 $6 $7}'
+ 1431  sudo apt install open-ssh
+ 1432  sudo apt install sshd
+ 1433  sudo apt search ssh
+ 1434  sudo apt search ssh | grep open
+ 1435  sudo apt install openssh
+ 1436  sudo apt install openssh-server 
+ 1437  systemctl --status-all
+ 1438  systemctl 
+ 1439  systemctl -h
+ 1440  systemctl show 
+ 1441  systemctl show | ssh
+ 1442  systemctl show | grep ssh
+ 1443  systemctl start openssh-server
+ 1444  systemctl show 
+ 1445  systemctl 
+ 1446  systemctl start ssh
+ 1447  systemctl show services
+ 1448  systemctl services
+ 1449  ls
+ 1450  rm gestio
+ 1451  rm -R gestio
+ 1452  rm -R gestion/
+ 1453  mkdir gestioip
+ 1454  cd gestioip/
+ 1455  git clone https://github.com/muebel/gestioip-docker-compose
+ 1456  ls
+ 1457  cd gestioip-docker-compose/
+ 1458  docker-compose up -d
+ 1459  sudo docker-compose up -d
+ 1460  ls
+ 1461  cpwd
+ 1462  pwd
+ 1463  mkdir GeekBrains
+ 1464  cd GeekBrains/
+ 1465  cd ..
+ 1466  chroot GeekBrains/ /bin/bash
+ 1467  sudo chroot GeekBrains/ /bin/bash
+ 1468  cd GeekBrains/
+ 1469  mkdir bin
+ 1470  cp /bin/bash bin/
+ 1471  cd ..
+ 1472  sudo chroot GeekBrains/ /bin/bash
+ 1473  ldd /bin/bash
+ 1474  sudo su
+ 1475  ls
+ 1476  cls -la
+ 1477  ls -la
+ 1478  chroot GeekBrains/ /bin/bash
+ 1479  sudo chroot GeekBrains/ /bin/bash
+ 1480  cp /bin/bash GeekBrains/bin/
+ 1481  ldd /bin/bash
+ 1482  mkdir GeekBrains/lib
+ 1483  mkdir GeekBrains/lib64
+ 1484  cp /lib/x86_64-linux-gnu/libtinfo.so.6 GeekBrains/lib
+ 1485  cp /lib/x86_64-linux-gnu/libc.so.6 GeekBrains/lib
+ 1486  cp /lib64/ld-linux-x86-64.so.2 GeekBrains/lib64/
+ 1487  sudo chroot GeekBrains/ /bin/bash
+ 1488  whereis ls
+ 1489  mkdir GeekBrains/usr/bin
+ 1490  mkdir GeekBrains/usr/
+ 1491  mkdir GeekBrains/usr/bin
+ 1492  cp /usr/bin/ls GeekBrains/usr/bin/
+ 1493  ldd ls
+ 1494  sudo ldd ls
+ 1495  sudo ldd /usr/bin/ls
+ 1496  cp /lib/x86_64-linux-gnu/libselinux.so.1 GeekBrains/lib
+ 1497  cp /lib/x86_64-linux-gnu/libc.so.6 GeekBrains/lib
+ 1498  cp /lib/x86_64-linux-gnu/libpcre2-8.so.0 GeekBrains/lib
+ 1499  cp /lib64/ld-linux-x86-64.so.2 GeekBrains/lib64/
+ 1500  sudo chroot GeekBrains/ /bin/bash
+ 1501  ip
+ 1502  sudo ip
+ 1503  sudo ip netns add testns123
+ 1504  sudo ip netns exec testns123 bash
+ 1505  ip a
+ 1506  sudo ip link add veth0 type veth peer name veth1
+ 1507  ip a
+ 1508  sudo ip link set veth1 netns testns123
+ 1509  sudo chroot GeekBrains/ /bin/bash
+ 1510  ip a
+ 1511  sudo ip netns exec testns123 bash
+ 1512  sudo ip addr add 10.0.0.1/24 dev veth0
+ 1513  sudo ip link set dev veth0 up
+ 1514  ip add
+ 1515  ping 10.0.0.2
+ 1516  sudo ip netns exec testns123 bash
+ 1517  sudo unshare --net bash
+ 1518  ls /proc/\$\$/ns/
+ 1519  ls -la /proc/\$\$/ns/
+ 1520  sudo ls -la /proc/\$\$/ns/
+ 1521  sudo ls -la /proc/$$/ns
+ 1522  sudo unshare --net bash
+ 1523  sudo unshare --pid --net --fork --mount-proc /bin/bash
+ 1524  top
+ 1525  sudo unshare --pid --net --fork --mount-proc /bin/bash
+ 1526  man unshare
+ 1527  ls /dev
+ 1528  ls -al /dev
+ 1529  lsblk 
+ 1530  sudo mkdir /sys/fs/cgroup/testgroup1
+ 1531  ls /sys/fs/cgroup/
+ 1532  ls /sys/fs/cgroup/testgroup1/
+ 1533  cat /sys/fs/cgroup/testgroup1/memory.max 
+ 1534  cat /sys/fs/cgroup/testgroup1/memory.low 
+ 1535  cat /sys/fs/cgroup/testgroup1/cgroup.freeze 
+ 1536  cat /sys/fs/cgroup/testgroup1/cpu.stat 
+ 1537  cat /proc/$$/status | grep 'allowed'
+ 1538  vim /sys/fs/cgroup/testgroup1/memory.max 
+ 1539  sudo vim /sys/fs/cgroup/testgroup1/memory.max 
+ 1540  cat /sys/fs/cgroup/testgroup1/memory.max 
+ 1541  top
+ 1542  sudo su
+ 1543  ll /etc/apt/keyrings/
+ 1544  sudo docker run  hello-world
+ 1545  docker --version
+ 1546  docker --info
+ 1547  docker info
+ 1548  sudo docker info
+ 1549  docker pull ubuntu
+ 1550  sudo docker pull ubuntu
+ 1551  sudo docker pull ubuntu:22.04
+ 1552  docker images
+ 1553  sudo docker images
+ 1554  sudo docker images -aq
+ 1555  sudo docker rmi (docker images -aq)
+ 1556  sudo docker rmi $(docker images -aq)
+ 1557  sudo docker rmi $(sudo docker images -aq)
+ 1558  sudo docker images
+ 1559  sudo su
+ 1560  sudo poweroff
+ 1561  sudo su
+ 1562  tmux attach
+ 1563  tmux 
+ 1564  cd GeekBrains/
+ 1565  vim Dockerfileo
+ 1566  vim Dockerfile
+ 1567  vim Dockerfile_old 
+ 1568  cd Seminar_04/
+ 1569  ls
+ 1570  ipa
+ 1571  ip a
+ 1572  sudo su
+ 1573  suso su
+ 1574  sudo su
+ 1575  docker ps
+ 1576  sudo su
+ 1577  ip a
+ 1578  cd GeekBrains/
+ 1579  ls -la
+ 1580  chown -R wakhsavior:wakhsavior Final_Project/
+ 1581  sudo chown -R wakhsavior:wakhsavior Final_Project/
+ 1582  ls -la
+ 1583  cd Final_Project/
+ 1584  ls
+ 1585  ls -la
+ 1586  git push -u origin main
+ 1587  ssh-keygen 
+ 1588  git push -u origin main
+ 1589  ssh -vT git@github.com
+ 1590  cat /home/wakhsavior/.ssh/
+ 1591  cat /home/wakhsavior/.ssh/id_rsa
+ 1592  cat /home/wakhsavior/.ssh/id_rsa.pub 
+ 1593  git push -u origin main
+ 1594  exit
+ 1595  cd GeekBrains/Final_Project/
+ 1596  ls
+ 1597  cat >> Pets
+ 1598  cat Pets 
+ 1599  cat >> Pack_Animals
+ 1600  cat Pack_Animals 
+ 1601  git checkout -b Linux_commands
+ 1602  git status
+ 1603  git log 
+ 1604  git log --one-line
+ 1605  git log --one-lines
+ 1606  git log -one-lines
+ 1607  git log --all --one-line
+ 1608  git log --all
+ 1609  cat * | cat >> Friends
+ 1610  cat Friends 
+ 1611  rm Friends 
+ 1612  cat P* | cat >> Friends
+ 1613  cat Friends 
+ 1614  cd Animals
+ 1615  mkdir Animals
+ 1616  mv Friends Animals/
+ 1617  wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
+ 1618  ls
+ 1619  sudo dpkg -i mysql-apt-config_0.8.26-1_all.deb 
+ 1620  cat /etc/apt/sources.list
+ 1621  cat /etc/apt/sources.list.d/mysql.list 
+ 1622  sudo apt update
+ 1623  sudo apt install mysql-server
+ 1624  sudo apt purge mysql-server
+ 1625  history >> history.list
