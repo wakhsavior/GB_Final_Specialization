@@ -1,8 +1,10 @@
 # GB_Final_Specialization
 
+# Задание 1:
+
 Linux output:
 
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pets
+`wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pets
 Dogs
 Cats
 Hamsters
@@ -20,7 +22,7 @@ wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Pack_Animals
 Horses
 Camels
 Donkeys
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ `
 
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat P* | cat >> Friends
@@ -32,6 +34,8 @@ Dogs
 Cats
 Hamsters
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+
+# Задание 2:
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mkdir Animals
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv 
