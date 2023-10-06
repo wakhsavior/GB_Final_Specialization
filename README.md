@@ -1,47 +1,50 @@
 # GB_Final_Specialization
 
-# Задание 1:
+## Задание 1:
 
 Linux output:
 
-`wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pets
+\```
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pets
 Dogs
 Cats
 Hamsters
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Pets 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Pets
 Dogs
 Cats
 Hamsters
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pack_Animals
 Horses
 Camels
 Donkeys
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Pack_Animals 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Pack_Animals
 Horses
 Camels
 Donkeys
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ `
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
+
 
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat P* | cat >> Friends
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Friends             
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat Friends
 Horses
 Camels
 Donkeys
 Dogs
 Cats
 Hamsters
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
+\```
 
-# Задание 2:
+## Задание 2:
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mkdir Animals
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv 
-Animals/      Friends       .git/         Pack_Animals  Pets          README.md     
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv
+Animals/      Friends       .git/         Pack_Animals  Pets          README.md
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv Friends Animals/
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
 --2023-10-05 16:25:57--  https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
@@ -56,21 +59,21 @@ HTTP request sent, awaiting response... 200 OK
 Length: 18088 (18K) [application/x-debian-package]
 Saving to: ‘mysql-apt-config_0.8.26-1_all.deb’
 
-mysql-apt-config_0.8.26-1_all.deb                          100%[=====================================================================================================================================>]  17,66K  --.-KB/s    in 0,001s  
+mysql-apt-config_0.8.26-1_all.deb                          100%[=====================================================================================================================================>]  17,66K  --.-KB/s    in 0,001s
 
 2023-10-05 16:25:58 (18,0 MB/s) - ‘mysql-apt-config_0.8.26-1_all.deb’ saved [18088/18088]
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ ls
 Animals  mysql-apt-config_0.8.26-1_all.deb  Pack_Animals  Pets  README.md
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ sudo dpkg -i mysql-apt-config_0.8.26-1_all.deb 
-[sudo] password for wakhsavior: 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ sudo dpkg -i mysql-apt-config_0.8.26-1_all.deb
+[sudo] password for wakhsavior:
 Selecting previously unselected package mysql-apt-config.
 (Reading database ... 251683 files and directories currently installed.)
 Preparing to unpack mysql-apt-config_0.8.26-1_all.deb ...
 Unpacking mysql-apt-config (0.8.26-1) ...
 Setting up mysql-apt-config (0.8.26-1) ...
 
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat /etc/apt/sources.list.d/mysql.list 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat /etc/apt/sources.list.d/mysql.list
 ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
 # You may comment out entries below, but any other modifications may be lost.
 # Use command 'dpkg-reconfigure mysql-apt-config' as root for modifications.
@@ -79,14 +82,14 @@ deb [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/a
 deb [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/apt/ubuntu/ jammy mysql-tools
 #deb [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/apt/ubuntu/ jammy mysql-tools-preview
 deb-src [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/apt/ubuntu/ jammy mysql-8.0
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
 
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ sudo apt update
 Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
-Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]                                   
-Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]                                                                
-Hit:4 https://download.virtualbox.org/virtualbox/debian jammy InRelease        
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+Hit:4 https://download.virtualbox.org/virtualbox/debian jammy InRelease
 Hit:5 https://download.docker.com/linux/ubuntu jammy InRelease
 Get:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 056 kB]
 Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [503 kB]
@@ -112,31 +115,31 @@ Get:26 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Package
 Get:27 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24,3 kB]
 Get:28 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [17,9 kB]
 Get:29 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [640 B]
-Get:30 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]          
-Get:31 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,3 kB]                   
-Get:32 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]            
+Get:30 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Get:31 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,3 kB]
+Get:32 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]
 Get:33 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config amd64 Packages [565 B]
 Get:34 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config i386 Packages [565 B]
-Get:35 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,7 kB]  
-Get:36 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [8 011 B]                
-Get:37 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]                   
-Get:38 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [345 kB]                                                                                                                                                     
-Get:39 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [856 kB]                                                                                                                                                    
-Get:40 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [175 kB]                                                                                                                                                    
-Get:41 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,1 kB]                                                                                                                                            
-Get:42 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,4 kB]                                                                                                                                             
-Get:43 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [32,0 kB]                                                                                                                                              
-Get:44 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [953 kB]                                                                                                                                              
-Get:45 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [154 kB]                                                                                                                                              
-Get:46 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [532 B]                                                                                                                                         
-Get:47 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [560 kB]                                                                                                                                                 
-Get:48 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [788 kB]                                                                                                                                                
-Get:49 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [144 kB]                                                                                                                                                
-Get:50 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [40,1 kB]                                                                                                                                        
-Get:51 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,7 kB]                                                                                                                                         
-Get:52 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]                                                                                                                                             
-Get:53 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]                                                                                                                                         
-Fetched 10,4 MB in 7s (1 422 kB/s)                                                                                                                                                                                                      
+Get:35 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,7 kB]
+Get:36 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [8 011 B]
+Get:37 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [345 kB]
+Get:39 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [856 kB]
+Get:40 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [175 kB]
+Get:41 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,1 kB]
+Get:42 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,4 kB]
+Get:43 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [32,0 kB]
+Get:44 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [953 kB]
+Get:45 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [154 kB]
+Get:46 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [532 B]
+Get:47 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [560 kB]
+Get:48 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [788 kB]
+Get:49 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [144 kB]
+Get:50 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [40,1 kB]
+Get:51 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,7 kB]
+Get:52 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]
+Get:53 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+Fetched 10,4 MB in 7s (1 422 kB/s)
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -168,7 +171,7 @@ Get:5 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-cli
 Get:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-client amd64 8.0.34-1ubuntu22.04 [66,4 kB]
 Get:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server-core amd64 8.0.34-1ubuntu22.04 [24,8 MB]
 Get:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-server amd64 8.0.34-1ubuntu22.04 [78,2 kB]
-Fetched 30,7 MB in 3s (8 898 kB/s)                     
+Fetched 30,7 MB in 3s (8 898 kB/s)
 Preconfiguring packages ...
 (Reading database ... 251688 files and directories currently installed.)
 Preparing to unpack .../mysql-server_8.0.34-1ubuntu22.04_amd64.deb ...
@@ -221,12 +224,12 @@ Configuration file '/etc/mysql/mysql.conf.d/mysqld.cnf'
       D     : show the differences between the versions
       Z     : start a shell to examine the situation
  The default action is to keep your current version.
-*** mysqld.cnf (Y/I/N/O/D/Z) [default=N] ? 
+*** mysqld.cnf (Y/I/N/O/D/Z) [default=N] ?
 update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my.cnf) in auto mode
 Setting up mysql-server (8.0.34-1ubuntu22.04) ...
 Processing triggers for man-db (2.10.2-1) ...
 Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
 
 
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ sudo apt purge mysql-server
@@ -244,4 +247,4 @@ After this operation, 77,8 kB disk space will be freed.
 Do you want to continue? [Y/n] y
 (Reading database ... 251756 files and directories currently installed.)
 Removing mysql-server (8.0.34-1ubuntu22.04) ...
-wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ 
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
