@@ -1,10 +1,9 @@
 # GB_Final_Specialization
 
-## Задание 1:
+<details>
+<summary> Задание 1:</summary>
 
-Linux output:
-
-\```
+```
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ cat >> Pets
 Dogs
 Cats
@@ -36,16 +35,25 @@ Dogs
 Cats
 Hamsters
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
-\```
+```
+</details>
 
-## Задание 2:
+<details>
+<summary>Задание 2:</summary>
 
+```
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mkdir Animals
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv
 Animals/      Friends       .git/         Pack_Animals  Pets          README.md
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ mv Friends Animals/
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
+```
+</details>
 
+<details>
+<summary>Задание 3:</summary>
+
+```
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
 --2023-10-05 16:25:57--  https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
 Resolving dev.mysql.com (dev.mysql.com)... 184.51.238.43, 2001:2030:21:1a9::2e31, 2001:2030:21:19e::2e31
@@ -83,8 +91,13 @@ deb [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/a
 #deb [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/apt/ubuntu/ jammy mysql-tools-preview
 deb-src [signed-by=/usr/share/keyrings/mysql-apt-config.gpg] http://repo.mysql.com/apt/ubuntu/ jammy mysql-8.0
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
+```
+</details>
 
+<details>
+<summary>Задание 4:</summary>
 
+```
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ sudo apt update
 Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
 Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
@@ -248,3 +261,88 @@ Do you want to continue? [Y/n] y
 (Reading database ... 251756 files and directories currently installed.)
 Removing mysql-server (8.0.34-1ubuntu22.04) ...
 wakhsavior@GB-Linux:~/GeekBrains/Final_Project$
+```
+</details>
+
+<details>
+<summary>Задание 5:</summary>
+
+```
+wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ history
+ 1583  cd Final_Project/
+ 1584  ls
+ 1585  ls -la
+ 1586  git push -u origin main
+ 1587  ssh-keygen
+ 1588  git push -u origin main
+ 1589  ssh -vT git@github.com
+ 1590  cat /home/wakhsavior/.ssh/
+ 1591  cat /home/wakhsavior/.ssh/id_rsa
+ 1592  cat /home/wakhsavior/.ssh/id_rsa.pub
+ 1593  git push -u origin main
+ 1594  exit
+ 1595  cd GeekBrains/Final_Project/
+ 1596  ls
+ 1597  cat >> Pets
+ 1598  cat Pets
+ 1599  cat >> Pack_Animals
+ 1600  cat Pack_Animals
+ 1601  git checkout -b Linux_commands
+ 1602  git status
+ 1603  git log
+ 1604  git log --one-line
+ 1605  git log --one-lines
+ 1606  git log -one-lines
+ 1607  git log --all --one-line
+ 1608  git log --all
+ 1609  cat * | cat >> Friends
+ 1610  cat Friends
+ 1611  rm Friends
+ 1612  cat P* | cat >> Friends
+ 1613  cat Friends
+ 1614  cd Animals
+ 1615  mkdir Animals
+ 1616  mv Friends Animals/
+ 1617  wget https://dev.mysql.com/get/mysql-apt-config_0.8.26-1_all.deb
+ 1618  ls
+ 1619  sudo dpkg -i mysql-apt-config_0.8.26-1_all.deb
+ 1620  cat /etc/apt/sources.list
+ 1621  cat /etc/apt/sources.list.d/mysql.list
+ 1622  sudo apt update
+ 1623  sudo apt install mysql-server
+ 1624  sudo apt purge mysql-server
+ 1625  history >> history.list
+```
+
+</details>
+<details>
+<summary>Задание 6:</summary>
+
+
+</details>
+<details>
+<summary>Задание 7:</summary>
+
+
+</details>
+<details>
+<summary>Задание 8:</summary>
+
+</details>
+
+</details>
+<details>
+<summary>Задание 9:</summary>
+
+</details>
+
+</details>
+<details>
+<summary>Задание 10:</summary>
+
+</details>
+
+
+
+
+
