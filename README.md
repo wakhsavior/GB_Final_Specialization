@@ -1,6 +1,6 @@
 # GB_Final_Specialization
 
-##Linux Commands
+### Linux Commands
 
 <details>
 <summary> Задание 1:</summary>
@@ -318,7 +318,7 @@ wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ history
 
 </details>
 
-###SQL
+### SQL
 
 [SQL file commands](./Animals.sql)
 
