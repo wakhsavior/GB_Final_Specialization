@@ -319,6 +319,9 @@ wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ history
 </details>
 
 ###SQL
+
+[SQL file commands](./Animals.sql)
+
 <details>
 <summary>Задание 6:</summary>
 <picture>
