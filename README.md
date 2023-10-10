@@ -1,6 +1,6 @@
 # GB_Final_Specialization
 
-###Linux Commands
+##Linux Commands
 
 <details>
 <summary> Задание 1:</summary>
