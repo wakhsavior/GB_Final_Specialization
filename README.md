@@ -525,7 +525,6 @@ Records: 0  Duplicates: 0  Warnings: 0
 ```
 </details>
 
-</details>
 <details>
 <summary>Задание 9:</summary>
 
@@ -636,12 +635,12 @@ mysql> select * from camels;
 +----+----------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 3 rows in set (0,00 sec)
 
-</details>
-
+```
 </details>
 <details>
 <summary>Задание 10:</summary>
 
+```
 mysql> DELETE  FROM camels; 
 Query OK, 3 rows affected (0,02 sec)
 
@@ -661,12 +660,14 @@ mysql> SELECT name,commands,date_birth,pack_Name FROM horses join pack_Animals o
 +--------------+---------------------------------------------------------------------------------------------------------------------------------------+------------+--------------+
 6 rows in set (0,00 sec)
 
+```
 </details>
 
 
 <details>
 <summary>Задание 11:</summary>
 
+```
 mysql> CREATE TABLE young_animals ( id INT NOT NULL, name varchar(50), `date_birth` Date NOT NULL, `commands` Varchar(300), `age` INT);
 Query OK, 0 rows affected (0,16 sec)
 
@@ -710,13 +711,14 @@ mysql> SELECT * FROM young_animals;
 +----+------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+------+
 8 rows in set (0,00 sec)
 
-
+```
 
 </details>
 
 <details>
 <summary>Задание 12:</summary>
 
+```
 mysql> SELECT name,commands,date_birth,pack_Name as Animal FROM horses join pack_Animals on id_pack_Animals=pack_Animals.id
     -> UNION
     -> SELECT name,commands,date_birth,pack_Name as Animal FROM donkeys join pack_Animals on id_pack_Animals=pack_Animals.id
@@ -747,14 +749,16 @@ mysql> SELECT name,commands,date_birth,pack_Name as Animal FROM horses join pack
 +------------------+---------------------------------------------------------------------------------------------------------------------------------------+------------+--------------+
 15 rows in set (0,00 sec)
 
-
+```
 </details>
 <details>
+
+
+### JAVA
+
 <summary>Задание 13:</summary>
 
 </details>
-
-### JAVA
 
 
 <details>
