@@ -317,7 +317,10 @@ wakhsavior@GB-Linux:~/GeekBrains/Final_Project$ history
 </details>
 <details>
 <summary>Задание 6:</summary>
-
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="YOUR-DARKMODE-IMAGE">
+ <img alt="TASK-3 picture" src="./UML_diagram.jpg">
+</picture>
 
 </details>
 <details>
