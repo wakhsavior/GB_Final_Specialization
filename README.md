@@ -755,23 +755,6 @@ mysql> SELECT name,commands,date_birth,pack_Name as Animal FROM horses join pack
 
 ### JAVA
 
-<details>
+[JAVA Program](./Java/)
 
-
-<summary>Задание 13:</summary>
-
-</details>
-
-
-<details>
-<summary>Задание 14:</summary>
-
-</details>
-
-
-
-<details>
-<summary>Задание 15:</summary>
-
-</details>
 
