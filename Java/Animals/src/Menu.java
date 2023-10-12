@@ -69,7 +69,12 @@ public class Menu {
                 switch (key) {
                     case 1:
                         Animal animal = this.animalClassMenu();
-                        animalList.addAnimal(animal);
+                        try {
+                            animalList.addAnimal(animal);
+                        }catch (CloseCounterException e){
+                            System.out.printf(e.getMessage());
+                        }
+
                         break;
                     case 2:
                         animalList.showAllAnimals();

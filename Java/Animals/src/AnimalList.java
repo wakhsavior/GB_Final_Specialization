@@ -1,26 +1,41 @@
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 
-public class AnimalList {
+public class AnimalList implements Model{
     private List<Animal> animals;
+    private Counter counter = new Counter();
 
     /**
      * добавить животное в список
      */
-
-    public void addAnimal(Animal animal) {
+@Override
+    public void addAnimal(Animal animal) throws CloseCounterException {
         if (animals == null) {
             animals = new ArrayList<>();
         }
-        animals.add(animal);
-        animal.setAnimalName();
-        animal.setDateBirth();
-    }
+        try (Counter counter1 = counter){
+counter1.openCounter();
+            counter1.add();
+            animals.add(animal);
+            animal.setAnimalName();
+            if (animal.getAnimalName() == null || animal.getAnimalName() == ""){
+                throw new CloseCounterException("Имя животного задано неверно");
+            }
+            animal.setDateBirth();
+            if ((animal.getDateBirth() == null) || new Date().before(animal.getDateBirth())){
+                throw new CloseCounterException("Дата рождения животного задана неверно");
+            }
+        }catch (CloseCounterException e){
+            animals.remove(animal);
+            throw new CloseCounterException(e.getMessage());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+}
 
     /**
      * удалить животное из списка
@@ -28,6 +43,7 @@ public class AnimalList {
      * @param animal
      * @return
      */
+    @Override
     public boolean removeAnimal(Animal animal) {
         return animals.remove(animal);
     }
@@ -37,6 +53,7 @@ public class AnimalList {
      *
      * @return
      */
+    @Override
     public List<Animal> getAnimals() {
         return animals;
     }

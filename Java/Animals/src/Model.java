@@ -1,9 +1,9 @@
-//import java.util.Collection;
-//
-//public interface Model {
-//
-//    void addPrestenter(Presenter presenter);
-//    Collection<Animal> getAnimals();
-//    void addAnimal();
-//
-//}
+import java.util.Collection;
+import java.util.List;
+
+public interface Model {
+    List<Animal> getAnimals();
+    void addAnimal(Animal animal) throws CloseCounterException;
+    boolean removeAnimal(Animal animal);
+
+}
